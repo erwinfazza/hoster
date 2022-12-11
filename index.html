@@ -4,14 +4,18 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/main.html" />
+    <link rel="stylesheet" href="css/main.css" />
     <title>hoster landing page</title>
   </head>
   <body>
-    <nav>
+    <nav class="navbar">
       <div class="brands">
-        <img src="Assets/Logo.svg" alt="logo" />
-        <button type="submit">Hosterr is hiring!</button>
+        <div class="img">
+          <img src="Assets/Logo.svg" alt="logo" />
+        </div>
+        <div class="btn">
+          <button type="submit">Hosterr is hiring!</button>
+        </div>
       </div>
       <div class="navlink">
         <ul>
@@ -24,10 +28,75 @@
         <button type="submit" class="sign-in">Sign In</button>
         <button class="join">Join Waitlist</button>
       </div>
+      <div class="toggle-button">
+        <img src="Assets/Hamburger Menu.svg" alt="Menu" />
+      </div>
     </nav>
+    <!-- navbar end -->
+
     <!-- Header -->
     <header>
-      <div class="text"></div>
+      <div class="text">
+        <h1>Host your website in less than 5 minutes.</h1>
+        <p>
+          With Hosterr, get your website up and running in nno less than 5
+          minutes with the most competitive pricing packages available online.
+        </p>
+        <div class="register">
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Enter e-mail address"
+            required
+          />
+          <button class="join" type="submit">Join Waitlist</button>
+        </div>
+        <div class="spam">
+          <img src="Assets/Checkmark.svg" alt="Checkmark" />
+          <p>No spam, ever. Unsubscribe anytime.</p>
+        </div>
+      </div>
+      <div class="picture">
+        <img src="Assets/Blue Shape.svg" alt="blue shape" class="pic-1" />
+        <img src="Assets/Pink Shape.svg" alt="pink shape" class="pic-2" />
+        <img src="Assets/Purple Shape.svg" alt="purple shape" class="pic-3" />
+        <img src="Assets/Hero Image (Model).png" alt="Hero" class="pic-4" />
+      </div>
     </header>
+    <!-- header end -->
+
+    <!--footer  -->
+    <footer>
+      <div class="social">
+        <ul>
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">Twitter</a></li>
+        </ul>
+      </div>
+      <div class="avatar">
+        <div class="avt">
+          <img src="Assets/Help Avatar.svg" alt="avatar" />
+        </div>
+        <div class="talk">
+          <p>Have anyquestion?</p>
+          <strong>Talk to a specialis</strong>
+        </div>
+      </div>
+    </footer>
+    <!-- footer -->
+
+    <!-- navbar animation -->
+    <script>
+      const toggleButton = document.getElementsByClassName("toggle-button")[0];
+      const navLink = document.getElementsByClassName("navlink")[0];
+      const sign = document.getElementsByClassName("sign")[0];
+
+      toggleButton.addEventListener("click", () => {
+        navLink.classList.toggle("active");
+        sign.classList.toggle("active");
+      });
+    </script>
   </body>
 </html>
