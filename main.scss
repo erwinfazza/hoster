@@ -222,3 +222,29 @@ footer {
     margin: 50px 20px;
   }
 }
+// tablet end
+
+// mobile
+@media screen and (max-width: 576px) {
+  header {
+    .picture {
+      margin-left: 50px;
+    }
+    .text {
+      .register {
+        input {
+          width: 100%;
+        }
+        button {
+          margin-top: 20px;
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+footer {
+  flex-direction: column;
+  margin-top: -80px;
+  gap: 20px;
+}
