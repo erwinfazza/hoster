@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;1,300;1,700&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -37,14 +39,16 @@ body {
 .navbar .navlink ul li a {
   color: rgb(66, 66, 66);
   text-decoration: none;
+  font-family: "Lato", sans-serif;
 }
 .navbar .sign .sign-in {
-  background-color: white;
+  background-color: transparent;
   border: none;
   color: rgb(66, 66, 66);
   cursor: pointer;
 }
 .navbar .sign .join {
+  margin-left: 10px;
   background-color: rgb(90, 147, 252);
   padding: 15px;
   border-radius: 5px;
@@ -67,6 +71,7 @@ header .text {
 header .text h1 {
   font-size: 60px;
   margin: 40px 0 0;
+  font-family: "Playfair Display", serif;
 }
 header .text p {
   margin: 20px 0;
@@ -219,9 +224,9 @@ footer .avatar .talk {
     margin-top: 20px;
     width: 100%;
   }
-}
-footer {
-  flex-direction: column;
-  margin-top: -80px;
-  gap: 20px;
+  footer {
+    flex-direction: column;
+    margin-top: -80px;
+    gap: 20px;
+  }
 }/*# sourceMappingURL=main.css.map */
